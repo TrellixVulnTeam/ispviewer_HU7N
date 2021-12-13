@@ -1,0 +1,38 @@
+$color_fuente: black;
+
+p {
+    color: $color_fuente;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h1 {
+    color: $color_fuente;
+    font-weight: bold;
+}
+
+h3 {
+    color: #5d2a42;
+    font-size: 20px;
+}
+
+footer li {
+    color: $color_fuente;
+}
+
+form {
+    color: $color_fuente;
+    font-size: 100%;
+    line-height: 2;
+}
+
+nav a {
+    text-decoration: none;
+    color: $color_fuente;
+}
+
+ul li {
+    text-decoration: none;
+    color: $color_fuente;
+}

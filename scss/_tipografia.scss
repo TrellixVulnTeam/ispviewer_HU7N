@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacion {
+    font-size: 50px;
+    font-family: sans-serif;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+li {
+    font-style: normal;
+    font-size: 15px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.contactanos {
+    text-align: center;
+}
+
+.contactanos__opciones {
+    letter-spacing: 5px;
+    word-spacing: 1.5;
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+nav li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+}

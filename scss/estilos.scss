@@ -1,0 +1,307 @@
+@import "colores";
+@import "estructura";
+@import "tipografia";
+
+$width1: 50%;
+$width2: 50%;
+$width3: 100px;
+$colorfondo: white;
+$colorfondosecundario: whitesmoke;
+$padding: 10px;
+$height: 100px;
+$margin: 10px;
+
+/* FIX PARA IMAGENES */
+img {
+    max-width: $width1 + $width2;
+    height: auto;
+}
+
+/* Acomoda todas las fotos al ancho de manera automática en todas las páginas */
+
+.imagenFondo {
+    background-image: url(../imagenes/asociarse.jpg);
+    background-repeat: no-repeat;
+    width: ($width3 * 14);
+    height: ($height * 5);
+    background-size: cover;
+    filter: opacity(0.8);
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.logos__individual {
+    border: 1px;
+    padding: $padding;
+    margin: $margin;
+    width: ($width3 * 2.2);
+    height: ($height * 2);
+}
+
+.logos__imagenes {
+    width: ($width3 * 2);
+    border-radius: 20px;
+}
+
+/* h2 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+} */
+
+/* .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding-left: 0;
+} */
+
+nav ul ul li {
+    display: block;
+    width: $width1 + $width2;
+    background-color: $colorfondo;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* UTILIDADES */
+/* HEADER Y FOOTER */
+
+header {
+    background-color: $colorfondosecundario;
+    width: $width1 + $width2;
+    height: 100%;
+}
+
+footer a {
+    margin: $margin;
+}
+
+footer {
+    background-color: $colorfondosecundario;
+    width: $width1 + $width2;
+}
+
+section article {
+    background-color: $colorfondo;
+}
+
+.sectionBeneficios {
+    width: $width1;
+    margin-top: ($margin * 10);
+}
+
+th {
+    color: crimson;
+}
+
+// nav {
+//     color: blanchedalmond;
+// }
+
+.abreviado {
+    list-style: decimal outside;
+}
+
+.cajaBusqueda {
+    width: $width1 + $width2;
+    height: 100%;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border: none;
+    padding-left: ($padding * 2);
+    margin-bottom: ($margin * 10);
+    margin-left: ($margin * 10);
+}
+
+.cajaConsulta {
+    margin: $margin;
+    width: $width1 + $width2;
+    height: 100%;
+    padding-left: ($padding * 2);
+}
+
+.mapaBusqueda {
+    width: $width1;
+    height: ($height * 4);
+}
+
+.activo {
+    background-color: $colorfondo;
+}
+
+.chat {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.chat img {
+    width: ($width3 / 2);
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "footer";
+} */
+
+/* .preguntas-frecuentes {
+    padding-left: 20px;
+} */
+
+.preguntasFrecuentes {
+    margin: $margin;
+    width: $width1 + $width2;
+    height: 100%;
+    padding-left: ($padding * 2);
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.cajasbody {
+    margin: $margin;
+    width: $width1 + $width2;
+    height: 100%;
+    padding-left: ($padding * 2);
+    margin-bottom: 100px;
+    margin-top: 2s00px;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+// .testimonios_fotos:hover {
+//     height: 400px;
+//     width: 400px;
+// }
+
+.testimonios__fotos--transicion {
+    width: ($width3 * 3);
+    height: ($height * 3);
+    border-radius: 10px;
+    margin-bottom: 200px;
+    transition: all 2s;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.headerImg {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.gradiente {
+    background-image: linear-gradient(to left, #0093e9, #80d0c7);
+}
+
+.transform {
+    transform: translate(0px, 40px);
+}
+
+.input {
+    width: ($width3 * 3.5);
+    height: ($height / 2);
+    transition: 3s;
+}
+
+.input:focus {
+    width: ($width3 * 5);
+    font-size: 24px;
+}
+
+.botonBusqueda {
+    width: 200px;
+    height: ($height / 2);
+    margin-bottom: 50px;
+}
+
+input {
+    width: auto;
+    height: auto;
+    margin: ($margin/2);
+}
+
+button {
+    width: ($width3 * 2);
+    height: ($height / 2);
+    margin: ($margin * 5);
+}
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+    * {
+        color: black;
+        background-color: $colorfondosecundario;
+        font-size: 12px;
+    }
+
+    .logo {
+        width: ($width3);
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    * {
+        color: white;
+        background-color: darkcyan;
+        font-size: 12px;
+    }
+
+    .logo {
+        width: ($width3);
+        height: $height;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    * {
+        color: white;
+        background-color: black;
+        font-size: 10px;
+    }
+
+    .logo {
+        width: ($width3);
+        height: $height;
+    }
+}

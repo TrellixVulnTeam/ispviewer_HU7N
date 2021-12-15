@@ -1,1 +1,1 @@
-Página hecha para buscar proveedores de Internet en la Ciudad de Mendoza según la ubicación del potencial cliente. Armada con bootstrap.
+Buscador armado con Bootstrap, de proveedores de Internet por ubicación en Mendoza.
